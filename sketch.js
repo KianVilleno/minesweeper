@@ -39,11 +39,9 @@ function newGame() {
   //making the field;
   field = new MATRIX(ROWS, COLS, SIZE);
   //creating random bombs;
-  // createBombs(
-  //   floor(random(Math.floor(COLS * 0.5), Math.floor((COLS * ROWS) / 2)))
-  // );
-
-  createBombs(1);
+  createBombs(
+    floor(random(Math.floor(COLS * 0.5), Math.floor((COLS * ROWS) / 2)))
+  );
 }
 
 function draw() {
